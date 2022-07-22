@@ -5,36 +5,40 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './components/HomeScreen/HomeScreen';
 import SettingsScreen from './components/SettingsScreen/SettingsScreen'
 import { Entypo } from '@expo/vector-icons';
-import ourapi from './components/Api/Api'
-import Product from './components/product/product'
+import { Feather } from '@expo/vector-icons';
+//import ourapi from './components/Api/Api'
+//import Product from './components/product/product'
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
 
   return (
-
-       < View> 
-      {
-        ourapi.map((post) => {
-          return (
-            <Product name={post.name} desc={post.desc} place={post.place} image={post.image} key={post.id}/>
-          )
-        })
-      }
-  
-    </View>
+    <NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} options={{
+        title:'Home',
+        tabBarIcon:()=>{
+          return(
+            <Entypo name="home" size={24} color="black" />
+          );
+        }
+      }}/>
+      <Tab.Screen name="Sights" component={SettingsScreen} options={{
+        title:'Sights',
+        tabBarIcon:()=>{
+          return(
+            <Feather name="map-pin" size={24} color="black" />
+          );
+        }
+      }} />
+    </Tab.Navigator>
+  </NavigationContainer>
   );
 }
 
 
 
 
- {/* <NavigationContainer>
-      <Tab.Navigator>
-        {/* <Entypo name="home" size={24} color="black" /> */}
-        {/* <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
-      </Tab.Navigator> */}
-    {/* </NavigationContainer> */} 
+ 
 
