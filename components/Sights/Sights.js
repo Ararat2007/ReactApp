@@ -1,5 +1,9 @@
 import * as React from 'react';
-import { Text, View, Button ,ScrollView  } from 'react-native';
+import {
+  Text, View, Button, ScrollView, SafeAreaView,
+  StyleSheet,
+  Image
+} from 'react-native';
 import Ourapi from '../Api/Api';
 import Product from '../Product/Product';
 
@@ -11,13 +15,13 @@ export default function Sights() {
     // </View>
  <ScrollView>
     < View>
-    
+
       {
         Ourapi.map((post) => {
           return (
 
             <Product name={post.name} desc={post.desc} place={post.place} image={post.image} key={post.id} />
-        
+
           )
         })
       }
@@ -25,4 +29,5 @@ export default function Sights() {
     </ScrollView>
   );
 }
+
 

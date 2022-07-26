@@ -1,11 +1,10 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View, ScrollView } from 'react-native';
+import { ImageBackground, StyleSheet, Text, View, } from 'react-native';
 
 const image = { uri: "https://i.pinimg.com/564x/dc/68/08/dc6808b363c667a77f62798dcafc87f2.jpg"};
 
 export default function HomeScreen() {
     return (
-      <ScrollView>
         <View style={styles.container}>
           <ImageBackground source={image} resizeMode="cover" style={styles.image}>
     <View style={styles.all}>
@@ -24,7 +23,6 @@ export default function HomeScreen() {
             </View>
             </ImageBackground>
         </View>
-        </ScrollView>
       );
     }
 

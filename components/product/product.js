@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, View, Image, Button, StyleSheet } from 'react-native';
-import SinglePage from '../SinglePage/SinglePage'
+import { Text, View, Image, Button, StyleSheet, ScrollView, SafeAreaView, } from 'react-native';
+import { useState } from 'react';
 
-//import { text } from 'stream/consumers';
 function Product({ name, desc, image, place }) {
+  const [shouldShow, setShouldShow] = useState(true);
   const styles = StyleSheet.create({
     name: {
       textAlign: 'center',
@@ -12,34 +12,48 @@ function Product({ name, desc, image, place }) {
       marginTop: 10,
       marginBottom: 15,
     },
-    // desc:{
-    //   display: 'block',
-    // },
-    container:{
+    desc: {
+      display: 'block',
+    },
+    container: {
       arginLeft: 'auto',
-       marginRight: 'auto',
-        marginTop: 'auto', 
-        marginBottom: 'auto',
+      marginRight: 'auto',
+      marginTop: 'auto',
+      marginBottom: 'auto',
+    },
+    container1: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      flex: 1,
+      margin: 10,
+      backgroundColor: 'transparent',
+      textDecoration: 'none',
     },
   })
   return (
-    <View style={styles.container} > 
-       <Image style={{
+    <View style={styles.container} >
+      <Image style={{
         height: 150,
         width: 300, marginLeft: 'auto', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto'
-      }} source={{ uri: image }}
-
-      />
+      }} source={{ uri: image }} />
       <Text style={styles.name}>{name}</Text>
-       <Text tyle={styles.desc}>{desc}</Text>
-      <Text> Գտնվում է {place}ի մարզւմ</Text> 
+      <Text> Գտնվում է {place}ում</Text>
+      <SafeAreaView style={{ flex: 1 }}>
+        <View style={styles.container1}>
+          {!shouldShow ? (
+            <Text>{desc}</Text>
+          ) : null}
+          <Button
+            title="Hide/Show Description"
+            onPress={() => setShouldShow(!shouldShow)}
+          />
+        </View>
+      </SafeAreaView>
 
-    
 
     </View>
 
   );
 }
 export default Product;
-
 
