@@ -15,7 +15,9 @@ export default function Sights() {
       {
         Ourapi.map((post) => {
           return (
+
             <Product name={post.name} desc={post.desc} place={post.place} image={post.image} key={post.id} />
+        
           )
         })
       }
@@ -23,3 +25,4 @@ export default function Sights() {
     </ScrollView>
   );
 }
+
