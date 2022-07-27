@@ -5,7 +5,7 @@ import {
   Image
 } from 'react-native';
 import Ourapi from '../Api/Api';
-import Product from '../Product/Product';
+import Product from '../product/product';
 
 
 export default function Sights() {

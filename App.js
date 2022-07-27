@@ -18,7 +18,9 @@ function GalleryStackScreen() {
  return (
    <GalleryStack.Navigator>
     <GalleryStack.Screen name="Gallery"  component={MoreInformation}   />
-    <GalleryStack.Screen name="ShowImage" component={ShowImage} />
+    <GalleryStack.Screen name="ShowImage" component={ShowImage} options={{
+          title: 'Back',
+        }} />
    </GalleryStack.Navigator>
   );
 }
@@ -43,7 +45,8 @@ export default function App() {
           }
           
         }} />
-        <Tab.Screen name="Gallery" component={GalleryStackScreen} options={{
+        <Tab.Screen name="Gallery." component={GalleryStackScreen} options={{
+          headerShown: false,
           title: 'Gallery',
           tabBarIcon: () => {
             return (

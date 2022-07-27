@@ -12,11 +12,8 @@ function Product({ name, desc, image, place }) {
       marginTop: 10,
       marginBottom: 15,
     },
-    desc: {
-      display: 'block',
-    },
     container: {
-      arginLeft: 'auto',
+      marginLeft: 'auto',
       marginRight: 'auto',
       marginTop: 'auto',
       marginBottom: 'auto',
