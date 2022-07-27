@@ -5,15 +5,23 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './components/HomeScreen/HomeScreen';
 import Sights from './components/Sights/Sights'
 import AboutUs from './components/AboutUs/AboutUs';
+import ShowImage from './components/MoreInformation/ShowImage' 
 import MoreInformation from './components/MoreInformation/MoreInformation';
-import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-
-
+import { FontAwesome } from '@expo/vector-icons';
+import { AntDesign } from '@expo/vector-icons';
+import { createStackNavigator } from '@react-navigation/stack';
 const Tab = createBottomTabNavigator();
-
+const GalleryStack = createStackNavigator();
+function GalleryStackScreen() {
+ return (
+   <GalleryStack.Navigator>
+    <GalleryStack.Screen name="Gallery"  component={MoreInformation}   />
+    <GalleryStack.Screen name="ShowImage" component={ShowImage} />
+   </GalleryStack.Navigator>
+  );
+}
 export default function App() {
   return (
     <NavigationContainer>
@@ -22,7 +30,7 @@ export default function App() {
           title: 'Home',
           tabBarIcon: () => {
             return (
-              <Entypo name="home" size={24} color="black" />
+              <AntDesign name="home" size={24} color="black" />
             );
           }
         }} />
@@ -33,20 +41,23 @@ export default function App() {
               <Feather name="map-pin" size={24} color="black" />
             );
           }
+          
         }} />
-        <Tab.Screen name="MoreInformation" component={MoreInformation} options={{
-          title: 'More Information',
+        <Tab.Screen name="Gallery" component={GalleryStackScreen} options={{
+          title: 'Gallery',
           tabBarIcon: () => {
             return (
-              <MaterialCommunityIcons name="information" size={24} color="black" />
+              <FontAwesome name="photo" size={24} color="black" />
             );
           }
-        }} />
+        }} screenOptions={{
+          headerShown: false
+        }}/>
         <Tab.Screen name="About Us" component={AboutUs} options={{
           title: 'About Us',
           tabBarIcon: () => {
             return (
-              <Ionicons name="body" size={24} color="black" />
+              <Ionicons name="body-outline" size={24} color="black" />
             );
           }
         }} />
