@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, View, Image, Button, StyleSheet, ScrollView, SafeAreaView, } from 'react-native';
+import { Text, View, Image, Button, StyleSheet, ScrollView, SafeAreaView } from 'react-native';
 import { useState } from 'react';
 
-function Product({ name, desc, image, place }) {
+function product({ name, desc, image, place }) {
   const [shouldShow, setShouldShow] = useState(true);
   const styles = StyleSheet.create({
     name: {
@@ -26,31 +26,42 @@ function Product({ name, desc, image, place }) {
       backgroundColor: 'transparent',
       textDecoration: 'none',
     },
+    place:{
+      fontSize: 15,
+      textAlign:'center',
+    },
+    desc:{
+        textAlign: 'center',
+        marginBottom: 15,
+    },
+    all:{
+      backgroundColor:'#E0E0E0'
+    }
   })
+
   return (
+    <View style={styles.all}>
     <View style={styles.container} >
       <Image style={{
         height: 150,
         width: 300, marginLeft: 'auto', marginRight: 'auto', marginTop: 'auto', marginBottom: 'auto'
       }} source={{ uri: image }} />
       <Text style={styles.name}>{name}</Text>
-      <Text> Գտնվում է {place}ում</Text>
+      <Text style={styles.place}> Situated in {place}</Text>
       <SafeAreaView style={{ flex: 1 }}>
         <View style={styles.container1}>
           {!shouldShow ? (
-            <Text>{desc}</Text>
+            <Text style={styles.desc}>{desc}</Text>
           ) : null}
           <Button
-            title="Hide/Show Description"
+            title="Description"
+            color='#47700A'
             onPress={() => setShouldShow(!shouldShow)}
           />
         </View>
-      </SafeAreaView>
-
-
+      </SafeAreaView>   
     </View>
-
+</View>
   );
 }
-export default Product;
-
+export default product;

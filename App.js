@@ -28,39 +28,52 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
+        
         <Tab.Screen name="Home" component={HomeScreen} options={{
           title: 'Home',
+          tabBarActiveTintColor: '#47700A',
+          tabBarInactiveTintColor: 'black',
           tabBarIcon: () => {
             return (
-              <AntDesign name="home" size={24} color="black" />
+              
+              <AntDesign name="home" size={24} color="#47700A" />
             );
           }
         }} />
         <Tab.Screen name="Sights" component={Sights} options={{
           title: 'Sights',
+          tabBarActiveTintColor: '#47700A',
+          tabBarInactiveTintColor: 'black',
           tabBarIcon: () => {
             return (
-              <Feather name="map-pin" size={24} color="black" />
+              <Feather name="map-pin" size={24} color="#47700A" />
             );
+           
           }
           
         }} />
         <Tab.Screen name="Gallery." component={GalleryStackScreen} options={{
           headerShown: false,
           title: 'Gallery',
+          tabBarActiveTintColor: '#47700A',
+          tabBarInactiveTintColor: 'black',
           tabBarIcon: () => {
             return (
-              <FontAwesome name="photo" size={24} color="black" />
+              <FontAwesome name="photo" size={24} color="#47700A" />
             );
           }
         }} screenOptions={{
+          tabBarActiveTintColor: '#47700A',
+          tabBarInactiveTintColor: 'black',
           headerShown: false
         }}/>
         <Tab.Screen name="About Us" component={AboutUs} options={{
           title: 'About Us',
+          tabBarActiveTintColor: '#47700A',
+          tabBarInactiveTintColor: 'black',
           tabBarIcon: () => {
             return (
-              <Ionicons name="body-outline" size={24} color="black" />
+              <Ionicons name="body-outline" size={24} color="#47700A" />
             );
           }
         }} />
@@ -68,9 +81,4 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-
-
-
-
 

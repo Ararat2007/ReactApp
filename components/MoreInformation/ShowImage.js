@@ -8,11 +8,11 @@ let deviceWidth = Dimensions.get('window').width
 
 const ShowImage = (props) => {
     return (
-        <ScrollView>
+     
             <View>
                 <ImageBackground source={ { uri: props.route.params.url} } style={{ height: deviceHeight, width: deviceWidth }} />
             </View>
-        </ScrollView>
+     
     )
 }
 //props.route.params.image

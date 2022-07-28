@@ -1,115 +1,88 @@
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View,ScrollView } from 'react-native';
-
-const image = { uri: "https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg"};
-
+import {  StyleSheet, Text, View, ScrollView, Image } from 'react-native';
+import female from '../../assets/female.jpeg'
+import male1 from '../../assets/male1.jpg'
+import male2 from '../../assets/male2.jpeg'
 export default function AboutUs() {
-    return (
-        
-        <View style={styles.container}>
-          <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-            <ScrollView>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            <Text style={styles.welcome}>Welcome!</Text>
-            <Text style={styles.harcer}>What can you find here?</Text>
-            <Text style={styles.patasxan}>We offer you the best well-known and incredible places in Armenia where you can visit and enjoy Armenian indescribable nature.</Text>
-            <Text style={styles.harcer}>Do you give some information about places?</Text>
-            <Text style={styles.patasxan}>Definitely yes. First of all we tell you about this or that place shortly, then where it is situated and how long it takes to reach that place from Yerevan.</Text>
-            <Text style={styles.harcer}> Do you organise some mini trips?</Text>
-            <Text style={styles.patasxan}>Yes, we do. We have severel services. For more you can go to --...</Text>
-            <Text style={styles.harcer}>Why is this app for?</Text>
-            <Text style={styles.patasxan}>In the latest years Armenia has became the most favourite country to visit for tourists. They like to spend here their vacation. There are only a few sources available to be aware of the most beautiful places here. So our company decided to help our lovely tourists. We want tourists to go back from our country with a great pleasure and with unforgettable memories.</Text>
-            </ScrollView>
-            </ImageBackground>
+  const styles1 = StyleSheet.create({
+
+    title: {
+      fontSize: 30
+    },
+    textBlock: {
+      flex: 1,
+      alignItems: "center",
+      margin: 20,
+      marginTop: 35
+    },
+    img: {
+      height:295,
+      width: 150,
+
+    },
+    imgBlock: {
+    },
+    each: {
+      flexDirection: "row",
+      margin:20
+    },
+    textView: {
+      flex: 1,
+      marginLeft:15,
+
+    },
+    textView2:{
+      flex: 1,
+    },
+    imgBlock2:{
+      marginLeft:5,
+    },
+    boxes:{
+      marginTop:25
+    },
+    all:{
+      backgroundColor: '#E0E0E0'
+    }
+ 
+  })
+  return (
+    <View style={styles1.all}>
+      <ScrollView>
+      <View style={styles1.textBlock}>
+        <Text style={styles1.title}>
+          Do you want to know
+          </Text>
+        <Text style={styles1.title}>about creators?</Text>
+      </View>
+      
+        <View style={styles1.boxes}>
+      <View style={styles1.each}>
+        <View style={styles1.imgBlock}>
+          <Image source={male2} style={styles1.img} />
+        </View>
+        <View style={styles1.textView}>
+          <Text>I'm Meri Muradyan, one of the creators of this app. I'm interested in programming, graphic design. I'm attending TUMO, which gives me a  very good experience, friends and so on. I am always energetic and eager to learn new skills. I am always highly enthused about my work and tasks ahead. Really enjoyed making such a good app with my team, which is a very needed app in my country for none-natives</Text>
+        </View>
+      </View>
+      <View style={styles1.each}>
+      <View style={styles1.textView2}>
+          <Text>I'm Meri Muradyan, one of the creators of this app. I'm interested in programming, graphic design. I'm attending TUMO, which gives me a  very good experience, friends and so on. I am always energetic and eager to learn new skills. I am always highly enthused about my work and tasks ahead. Really enjoyed making such a good app with my team, which is a very needed app in my country for none-natives</Text>
+        </View>
+        <View style={styles1.imgBlock2}>
+          <Image source={female} style={styles1.img} />
         </View>
         
-      );
-    }
-
-    const styles = StyleSheet.create({   
-      container:{
-        width: "100%",
-        height: "100%",
-      },
-      
-      welcome:{
-          fontSize: 45,
-          marginTop: 40,  
-          marginBottom: 15,
-          textAlign: 'center',
-          color: "white", 
-        },
-        harcer:{
-          fontSize: 20,
-          fontWeight: 'bold',
-          textAlign: 'center',
-          marginBottom: 5,
-          color: "white",
-        },
-
-        patasxan:{
-          fontSize: 15,
-          marginBottom: 15,
-          textAlign: 'center',
-          color: "white",
-        },
-
-        image:{
-          width: "100%",
-          height: "100%",
-        },
-    });
-
+      </View>
+      <View style={styles1.each}>
+        <View style={styles1.imgBlock}>
+          <Image source={male1} style={styles1.img} />
+        </View>
+        <View style={styles1.textView}>
+          <Text>I'm Meri Muradyan, one of the creators of this app. I'm interested in programming, graphic design. I'm attending TUMO, which gives me a  very good experience, friends and so on. I am always energetic and eager to learn new skills. I am always highly enthused about my work and tasks ahead. Really enjoyed making such a good app with my team, which is a very needed app in my country for none-natives</Text>
+        </View>
+      </View>
+      </View>
+      </ScrollView>
+    </View>
+  )
+}
