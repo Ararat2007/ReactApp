@@ -63,7 +63,7 @@ const Ourapi=[
     },
     {
         id:'10',
-        name:'Mother Cathedral of Etchmiadzin',
+        name:'Etchmiadzin Cathedral',
         desc:'Etchmiadzin, the center of the Armenian Apostolic Church, is located 20 km from Yerevan. Etchmiadzin Cathedral was founded at the beginning of the 4th century and is one of the oldest churches in the world. According to tradition, the church was built on the spot where the Son of God appeared in the dream of Grigor the Illuminator. This is where the name Etchmiadzin came from. The walls of the church are completely decorated from the inside with high-art murals by artists of the Hovnathanyan family. The residence of the Catholicos and the seminary are located in the area adjacent to the Mother Cathedral.',
         image:'https://www.busvoyage.am/wp-content/uploads/2018/06/Ejmiatsin-armenia.jpg',
         place:'Armavir province'
